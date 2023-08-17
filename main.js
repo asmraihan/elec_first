@@ -5,9 +5,9 @@ import banner from '/banner.jpg'
 import { setupCounter } from './counter.js'
 
 document.querySelector('#app').innerHTML = `
-  <div>
+  <div class='page'>
       <nav class='navbar'> 
-        <div><img src="${ef_logo}" alt="ef Logo" width="100" height="50" /></div>
+        <div><img class='logo' src="${ef_logo}" alt="ef Logo" width="100" height="50" /></div>
         <div class='menu_items'>
           <div class='upper_menu'>
           <p>Trending</p>
@@ -16,23 +16,24 @@ document.querySelector('#app').innerHTML = `
           <p>Support 24/7</p>
           </div>
           <div class='lower_menu'>
-            <div class='lower_menu_item'> <p>icon</p> <p>PC</p> </div>
-            <div class='lower_menu_item'> <p>icon</p> <p>Playstation</p> </div>
-            <div class='lower_menu_item'> <p>icon</p> <p>Xbox</p> </div>
-            <div class='lower_menu_item'> <p>icon</p> <p>Nintendo</p> </div>
+            <div class='lower_menu_item'> <i class="fa-solid fa-desktop"></i> <p>PC</p> <i class="fas fa-regular fa-angle-down"></i> </div>
+            <div class='lower_menu_item'> <i class="fa-brands fa-playstation"></i> <p>Playstation</p> <i class="fas fa-regular fa-angle-down"></i> </div>
+            <div class='lower_menu_item'> <i class="fa-brands fa-xbox"></i> <p>Xbox</p> <i class="fas fa-regular fa-angle-down"></i> </div>
+            <div class='lower_menu_item'> <i class="fa-solid fa-swatchbook"></i> <p>Nintendo</p> <i class="fas fa-regular fa-angle-down"></i> </div>
            
-            <div> <p>search icon</p> </div>
+            <div> <i class="fa-solid fa-magnifying-glass"></i> </div>
           </div>
         </div>
         <div class='right_icons'>
-          <p>icon</p>
-          <p>icon</p>
+          <p><i class="fa-solid fa-cart-arrow-down"></i></p>
+          <p><i class="fa-regular fa-user"></i></p>
         </div>
       </nav>
       <div class='banner'>
-         <img class='banner_image' src="${banner}" alt="banner"/>
+      
       </div>
   </div>
 `
 
 // setupCounter(document.querySelector('#counter'))
+{/* <img class='banner_image' src="${banner}" alt="banner"/> */}
