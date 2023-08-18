@@ -3,6 +3,12 @@ import rdr2 from '/rdr2.webp'
 import gta5 from '/gta5.jpg'
 import witcher3 from '/witcher3.jpg'
 import ef_logo from '/headr_logo.webp'
+import nextjs from '/nextjs.webp'
+import ts from '/typescript.webp'
+import tw from '/tailwind.webp'
+import shadcn from '/shadcn.webp'
+import zustand from '/zustand.webp'
+import stripe from '/stripe.webp'
 import banner from '/banner.jpg'
 import { setupCounter } from './counter.js'
 
@@ -29,8 +35,59 @@ document.querySelector('#app').innerHTML = `
          <p>Platforms</p>
          <p>View All</p>
         </div>
+        <div class='store_grid'>
 
-    
+            <div class='store_item'>
+              <img class='store_image' src="${nextjs}" alt="" />
+              <p>Next-JS</p>
+            </div>
+            <div class='store_item'>
+              <img class='store_image' src="${ts}" alt="" />
+              <p>Typescript</p>
+            </div>
+            <div class='store_item'>
+              <img class='store_image' src="${tw}" alt="" />
+              <p>Tailwind</p>
+            </div>
+
+            <div class='store_item'>
+              <img class='store_image' src="${nextjs}" alt="" />
+              <p>Next-JS</p>
+            </div>
+            <div class='store_item'>
+              <img class='store_image' src="${ts}" alt="" />
+              <p>Typescript</p>
+            </div>
+            <div class='store_item'>
+              <img class='store_image' src="${tw}" alt="" />
+              <p>Tailwind</p>
+            </div>
+  
+        </div>
+
+
+      <div class='modal_bar2'>
+        <p>Prepaid Cards</p>
+        <p>View All</p>
+       </div>
+        <div class='card_grid'>
+        
+          <div class='pay_card_item'>
+             <img class='pay_card_image' src="${stripe}" alt="" />
+             <p>Stripe</p>
+          </div>
+          <div class='pay_card_item'>
+             <img class='pay_card_image' src="${stripe}" alt="" />
+             <p>Stripe</p>
+          </div>
+          <div class='pay_card_item'>
+             <img class='pay_card_image' src="${stripe}" alt="" />
+             <p>Stripe</p>
+          </div>
+
+        </div>
+
+
     </div>
   </div>
 
