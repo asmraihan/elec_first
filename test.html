@@ -22,8 +22,14 @@
           <div class='lower_menu_item'> <i class="fa-solid fa-swatchbook"></i>
             <p>Nintendo</p> <i class="fa-solid fa-chevron-down down_arrow"></i>
           </div>
-
-          <div class='search_icon'> <i class="fa-solid fa-magnifying-glass"></i> </div>
+  
+        <div class="search-container">
+          <form action="/search" method="get">
+            <input class="search expandright" id="searchright" type="search" name="q" placeholder="Minecraft, RPG, Multiplayer...">
+            <label class="button searchbutton" for="searchright"><span class="mglass">&#9906;</span></label>
+          </form>
+        </div>
+  
         </div>
       </div>
       <div class='right_icons'>
@@ -47,12 +53,37 @@
       <h3 id='trend_text'>Trending</h3>
       <p id='view_btn'>View All</p>
     </div>
-
+  
     <div class='trending_items'>
+  
       <div class='card_item'>
-        <!-- <div class='card_image'> <img src="./public/rdr2.webp" alt="card item"/> </div> -->
+        <img class='card_image' src="${rdr2}" alt="rdr2 item">
+        <span class='card_discount_tag'>-25%</span>
+        <div class='card_info'>
+        <p class='card_name'>Red Dead Redemption 2</p>
+        <p class='card_price'>74.99€</p>
+        </div>
       </div>
-
+  
+      <div class='card_item'>
+        <img class='card_image' src="${gta5}" alt="gta5 item">
+        <span class='card_discount_tag'>-25%</span>
+        <div class='card_info'>
+        <p class='card_name'>Grand Theft Auto 5</p>
+        <p class='card_price'>74.99€</p>
+        </div>
+      </div>
+  
+      <div class='card_item'>
+        <img class='card_image' src="${witcher3}" alt="witcher3 item">
+        <span class='card_discount_tag'>-25%</span>
+        <div class='card_info'>
+        <p class='card_name'>The Witcher 3: Wild Hunt</p>
+        <p class='card_price'>74.99€</p>
+        </div>
+      </div>
+    
     </div>
+  
   </section>
-</div>
+  </div>

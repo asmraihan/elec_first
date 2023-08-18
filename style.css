@@ -361,10 +361,12 @@ h1 {
 
 .bod{
   position: relative;
+
+  
 }
 
 .trending {
-  bottom: -500px;
+  margin-top: 34%;
   /* margin: auto; */
   display: flex;
   flex-direction: column;
