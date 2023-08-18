@@ -280,11 +280,13 @@ h1 {
 }
 
 .card_item{
+  position: relative;
   width: 300px;
   height: 200px;
   object-fit: cover;
   border-radius: 10px;
 }
+
 
 .card_image{
   width: 100%;
@@ -295,6 +297,37 @@ h1 {
 
 .card {
   padding: 2em;
+}
+
+.card_discount_tag{
+  position: absolute;
+  bottom: -3px;
+  left: -3px;
+  display: inline-block;
+  padding: 4px 14px 4px 8px;
+  border-radius: 5px 12px 5px 5px;
+  background-color: #ff4e18;
+  font-size: 0.8em;
+  font-weight: 500;
+  color: #FFF;
+  clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+}
+
+.card_info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+
+.card_name{
+
+}
+
+.card_price{
+  font-size: 1.2em;
+  font-weight: 500;
 }
 
 .read-the-docs {

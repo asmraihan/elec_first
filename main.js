@@ -58,15 +58,34 @@ document.querySelector('#app').innerHTML = `
   </div>
 
   <div class='trending_items'>
+
     <div class='card_item'>
-      <img class='card_image' src="${rdr2}" alt="card item">
+      <img class='card_image' src="${rdr2}" alt="rdr2 item">
+      <span class='card_discount_tag'>-25%</span>
+      <div class='card_info'>
+      <p class='card_name'>Red Dead Redemption 2</p>
+      <p class='card_price'>74.99€</p>
+      </div>
     </div>
+
     <div class='card_item'>
-      <img class='card_image' src="${rdr2}" alt="card item">
+      <img class='card_image' src="${gta5}" alt="gta5 item">
+      <span class='card_discount_tag'>-25%</span>
+      <div class='card_info'>
+      <p class='card_name'>Grand Theft Auto 5</p>
+      <p class='card_price'>74.99€</p>
+      </div>
     </div>
+
     <div class='card_item'>
-      <img class='card_image' src="${rdr2}" alt="card item">
+      <img class='card_image' src="${witcher3}" alt="witcher3 item">
+      <span class='card_discount_tag'>-25%</span>
+      <div class='card_info'>
+      <p class='card_name'>The Witcher 3: Wild Hunt</p>
+      <p class='card_price'>74.99€</p>
+      </div>
     </div>
+  
   </div>
 
 </section>
