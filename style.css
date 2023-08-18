@@ -181,7 +181,7 @@ h1 {
 
 .searchbutton {
   position: absolute;
-  right: 0px;
+  right: -4px;
   top: -4px;
   padding: 12px 30px;
   font-size: 26px;
@@ -254,7 +254,7 @@ h1 {
 .expandright:focus {
   opacity: 1;
   font-size: 14px;
-	padding: 0 0 0 26px;
+	padding: 0 26px 0 26px;
   color : white;
 }
 /* search bar ends */
@@ -266,7 +266,7 @@ h1 {
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 99; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
@@ -280,20 +280,10 @@ h1 {
 /* Modal Content */
 .modal-content {
   color: white;
+  z-index: 100;
   background-color: rgba(0,0,0,0.4);
+  
   backdrop-filter: blur(30px) !important;
-  border-radius: 10px 10px 10px 10px;
-  height: 400px;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-}
-
-
-
-.modal-content-later {
-  z-index: 50;
-  background-color: #fefefe;
   border-radius: 10px 10px 10px 10px;
   height: 400px;
   margin: auto;
