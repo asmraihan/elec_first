@@ -94,7 +94,7 @@ h1 {
   /* background-color: rgba(0, 0, 0, .9); */
   color: white;
   backdrop-filter: blur(30px);
-  padding: 10px 20px;
+  padding: 9px 20px;
   text-align: center;
   text-decoration: none;
   margin: 4px 2px;
@@ -130,6 +130,136 @@ h1 {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#d12a00", GradientType=1);
 }
 
+
+.button {
+	display: inline-block;
+	margin: 4px 2px;
+	background-color: #444;
+	font-size: 14px;
+	padding-left: 32px;
+	padding-right: 32px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.button:hover {
+	transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+	background-color: white;
+	color: black;
+}
+
+/* .search-container {
+  background-color: #444;
+	position: relative;
+	display: inline-block;
+	margin: 4px 2px;
+	height: 50px;
+	width: 50px;
+	vertical-align: bottom;
+} */
+
+.mglass {
+	display: inline-block;
+	pointer-events: none;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+}
+
+.searchbutton {
+  position: absolute;
+  right: 0px;
+  top: -4px;
+  padding: 12px 30px;
+  font-size: 26px;
+  border-radius: 100%;
+  color: #fff;
+  /* margin: 100px 500px; */
+  background: rgb(0, 0, 0);
+  background: -moz-linear-gradient(30deg, rgba(0, 0, 0, 1) 0%, rgba(255, 78, 24, 1) 0%, rgba(209, 42, 0, 0.6050069686077556) 100%);
+  background: -webkit-linear-gradient(30deg, rgba(0, 0, 0, 1) 0%, rgba(255, 78, 24, 1) 0%, rgba(209, 42, 0, 0.6050069686077556) 100%);
+  background: linear-gradient(30deg, rgba(0, 0, 0, 1) 0%, rgba(255, 78, 24, 1) 0%, rgba(209, 42, 0, 0.6050069686077556) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#d12a00", GradientType=1);
+}
+
+.search:focus + .searchbutton {
+	transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+	background-color: white;
+	color: black;
+}
+
+.search {
+  color : white;
+	position: absolute;
+	left: 49px; /* Button width-1px (Not 50px/100% because that will sometimes show a 1px line between the search box and button) */
+  bottom: 0px;
+  background: linear-gradient(30deg, rgba(0, 0, 0, 1) 0%, rgb(241, 148, 41) 0%, rgba(209, 42, 0, 1) 100%);
+	outline: none;
+	border: none;
+	padding: 0;
+	width: 0;
+  border-radius: 100px;
+	height: 100%;
+	z-index: 10;
+	transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+}
+
+.search:focus {
+	width: 100%; /* Bar width+1px */
+	padding: 0 16px 0 0;
+  margin-right: -100px;
+  border-radius: 50px;
+}
+
+.search::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-size: 14px;
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+}
+
+.expandright {
+  margin-right: -100px;
+  opacity: 0;
+	left: auto;
+	right: 99px; /* Button width-1px */
+}
+
+.expandright:focus {
+  opacity: 1;
+  font-size: 14px;
+	padding: 0 0 0 26px;
+  color : white;
+}
+/* search bar ends */
+
+
 .right_icons {
   display: flex;
   flex-direction: row;
@@ -157,7 +287,6 @@ h1 {
   background-image: url("./public/banner.jpg"), linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
   background-blend-mode: overlay;
-  /* background-position:  left; */
 }
 
 .banner_info {
@@ -235,8 +364,8 @@ h1 {
 }
 
 .trending {
-  bottom: -560px;
-  margin: auto;
+  bottom: -500px;
+  /* margin: auto; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -245,6 +374,7 @@ h1 {
 }
 
 .trending_title{
+  padding: 0rem !important;
   position: absolute;
   text-align: center;
   display: flex;
@@ -269,6 +399,8 @@ h1 {
   font-size: 0.8em;
   font-weight: 500;
   color: #FFF;
+  cursor: pointer;
+  border: 1px solid #888;
 }
 
 .trending_items{

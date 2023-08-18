@@ -32,7 +32,13 @@ document.querySelector('#app').innerHTML = `
           <p>Nintendo</p> <i class="fa-solid fa-chevron-down down_arrow"></i>
         </div>
 
-        <div class='search_icon'> <i class="fa-solid fa-magnifying-glass"></i> </div>
+      <div class="search-container">
+        <form action="/search" method="get">
+          <input class="search expandright" id="searchright" type="search" name="q" placeholder="Minecraft, RPG, Multiplayer...">
+          <label class="button searchbutton" for="searchright"><span class="mglass">&#9906;</span></label>
+        </form>
+      </div>
+
       </div>
     </div>
     <div class='right_icons'>
@@ -95,3 +101,4 @@ document.querySelector('#app').innerHTML = `
 
 // setupCounter(document.querySelector('#counter'))
 {/* <img class='banner_image' src="${banner}" alt="banner"/> */ }
+//   <div class='search_icon'> <i class="fa-solid fa-magnifying-glass"></i> </div>
