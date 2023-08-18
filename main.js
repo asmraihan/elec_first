@@ -7,7 +7,7 @@ import banner from '/banner.jpg'
 import { setupCounter } from './counter.js'
 
 document.querySelector('#app').innerHTML = `
-<div class='bod'>
+<div class='bod '>
 <div class='page'>
   <nav class='navbar'>
     <div><img class='logo' src="${ef_logo}" alt="ef Logo" width="100" height="50" /></div>
@@ -19,7 +19,22 @@ document.querySelector('#app').innerHTML = `
         <p>Support 24/7</p>
       </div>
       <div class='lower_menu'>
-        <div class='lower_menu_item'> <i class="fa-solid fa-desktop"></i>
+
+
+
+  <div id="myModal" class="modal ">
+    <div class="modal-content ">
+      <span class="close">&times;</span>
+        <div class='modal_bar'>
+         <p>Platforms</p>
+         <p>View All</p>
+        </div>
+
+    
+    </div>
+  </div>
+
+        <div id="myBtn" class='lower_menu_item'> <i class="fa-solid fa-desktop"></i>
           <p>PC</p> <i class="fa-solid fa-chevron-down down_arrow"></i>
         </div>
         <div class='lower_menu_item'> <i class="fa-brands fa-playstation"></i>
@@ -99,6 +114,7 @@ document.querySelector('#app').innerHTML = `
   
 `
 
-// setupCounter(document.querySelector('#counter'))
+setupCounter()
 {/* <img class='banner_image' src="${banner}" alt="banner"/> */ }
 //   <div class='search_icon'> <i class="fa-solid fa-magnifying-glass"></i> </div>
+{/* <span class="close">&times;</span> */}

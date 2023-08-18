@@ -260,6 +260,83 @@ h1 {
 /* search bar ends */
 
 
+/* modal starts */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  /* background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);  */
+}
+
+
+/* Modal Content */
+.modal-content {
+  color: white;
+  background-color: rgba(0,0,0,0.4);
+  backdrop-filter: blur(30px) !important;
+  border-radius: 10px 10px 10px 10px;
+  height: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+}
+
+
+
+.modal-content-later {
+  z-index: 50;
+  background-color: #fefefe;
+  border-radius: 10px 10px 10px 10px;
+  height: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+}
+
+
+
+/* The Close Button */
+.close {
+  color: #fefefe;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  display: none;
+}
+
+/* .close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+} */
+
+.modal_bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  margin: 0;
+  border-radius: 10px;
+  background-color: transparent;
+  backdrop-filter: blur(30px);
+}
+
+
+
+
+/* modal ends */
+
+
 .right_icons {
   display: flex;
   flex-direction: row;
@@ -361,13 +438,10 @@ h1 {
 
 .bod{
   position: relative;
-
-  
 }
 
 .trending {
   margin-top: 34%;
-  /* margin: auto; */
   display: flex;
   flex-direction: column;
   justify-content: center;
