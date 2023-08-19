@@ -29,66 +29,68 @@ document.querySelector('#app').innerHTML = `
 
 
   <div id="myModal" class="modal ">
-    <div class="modal-content ">
-      <span class="close">&times;</span>
-        <div class='modal_bar'>
-         <p>Platforms</p>
-         <p>View All</p>
-        </div>
-        <div class='store_grid'>
+  <div class="modal-content ">
+  <div class='backdrop'>
+   <span class="close">&times;</span>
+     <div class='modal_bar'>
+      <p>Platforms</p>
+      <p>View All</p>
+     </div>
+     <div class='store_grid'>
 
-            <div class='store_item'>
-              <img class='store_image' src="${nextjs}" alt="" />
-              <p>Next-JS</p>
-            </div>
-            <div class='store_item'>
-              <img class='store_image' src="${ts}" alt="" />
-              <p>Typescript</p>
-            </div>
-            <div class='store_item'>
-              <img class='store_image' src="${tw}" alt="" />
-              <p>Tailwind</p>
-            </div>
+         <div class='store_item'>
+           <img class='store_image' src="${nextjs}" alt="" />
+           <p>Next-JS</p>
+         </div>
+         <div class='store_item'>
+           <img class='store_image' src="${ts}" alt="" />
+           <p>Typescript</p>
+         </div>
+         <div class='store_item'>
+           <img class='store_image' src="${tw}" alt="" />
+           <p>Tailwind</p>
+         </div>
 
-            <div class='store_item'>
-              <img class='store_image' src="${nextjs}" alt="" />
-              <p>Next-JS</p>
-            </div>
-            <div class='store_item'>
-              <img class='store_image' src="${ts}" alt="" />
-              <p>Typescript</p>
-            </div>
-            <div class='store_item'>
-              <img class='store_image' src="${tw}" alt="" />
-              <p>Tailwind</p>
-            </div>
-  
-        </div>
+         <div class='store_item'>
+           <img class='store_image' src="${nextjs}" alt="" />
+           <p>Next-JS</p>
+         </div>
+         <div class='store_item'>
+           <img class='store_image' src="${ts}" alt="" />
+           <p>Typescript</p>
+         </div>
+         <div class='store_item'>
+           <img class='store_image' src="${tw}" alt="" />
+           <p>Tailwind</p>
+         </div>
 
-
-      <div class='modal_bar2'>
-        <p>Prepaid Cards</p>
-        <p>View All</p>
-       </div>
-        <div class='card_grid'>
-        
-          <div class='pay_card_item'>
-             <img class='pay_card_image' src="${stripe}" alt="" />
-             <p>Stripe</p>
-          </div>
-          <div class='pay_card_item'>
-             <img class='pay_card_image' src="${stripe}" alt="" />
-             <p>Stripe</p>
-          </div>
-          <div class='pay_card_item'>
-             <img class='pay_card_image' src="${stripe}" alt="" />
-             <p>Stripe</p>
-          </div>
-
-        </div>
+     </div>
 
 
+   <div class='modal_bar2'>
+     <p>Prepaid Cards</p>
+     <p>View All</p>
     </div>
+     <div class='card_grid'>
+     
+       <div class='pay_card_item'>
+          <img class='pay_card_image' src="${stripe}" alt="" />
+          <p>Stripe</p>
+       </div>
+       <div class='pay_card_item'>
+          <img class='pay_card_image' src="${stripe}" alt="" />
+          <p>Stripe</p>
+       </div>
+       <div class='pay_card_item'>
+          <img class='pay_card_image' src="${stripe}" alt="" />
+          <p>Stripe</p>
+       </div>
+
+     </div>
+
+
+ </div>
+   </div>
   </div>
 
         <div id="myBtn" class='lower_menu_item'> <i class="fa-solid fa-desktop"></i>
